@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Discover how you show love with the Fishove Lover Test, then join the waitlist for a new app bringing more love into everyday life.">
+<meta name="theme-color" content="#f8036c">
+<title>Fishove — More time for love.</title>
+<!-- The Pages build replaces {{SITE_URL}} with the public site URL. -->
+<link rel="canonical" href="{{SITE_URL}}/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fishove — More time for love.">
+<meta property="og:description" content="Less effort making it happen. Something new for your love life.">
+<meta property="og:site_name" content="Fishove">
+<meta property="og:url" content="{{SITE_URL}}/">
+<meta property="og:image" content="{{SITE_URL}}/assets/social/fishove-preview.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="White Fishove logo on a bright pink background, with brand about love — Fishove™, WAITINGLIST and a large FISHOVE wordmark.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fishove — More time for love.">
+<meta name="twitter:description" content="Less effort making it happen. Something new for your love life.">
+<meta name="twitter:image" content="{{SITE_URL}}/assets/social/fishove-preview.png">
+<meta name="twitter:image:alt" content="White Fishove logo on a bright pink background, with brand about love — Fishove™, WAITINGLIST and a large FISHOVE wordmark.">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/social/favicon-96.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/social/apple-touch-icon.png">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/motion.css">
+<script src="js/quiz-data.js" defer></script>
+<script src="js/config.js" defer></script>
+<script src="js/motion.js" defer></script>
+<script src="js/app.js" defer></script>
+</head>
+<body data-view="home">
+<div class="shell">
+  <header>
+    <button type="button" class="plain wordmark" data-action="home" aria-label="Fishove home">brand about love —<br>Fishove<sup>™</sup></button>
+    <nav aria-label="Main navigation">
+      <button type="button" class="plain nav-link" id="nav-link" data-action="waitlist"><span id="nav-text">WAITINGLIST</span><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span></button>
+      <button type="button" class="plain logo" data-action="home" aria-label="Fishove home">
+        <svg viewBox="0 0 58 54" aria-hidden="true" fill="currentColor"><path d="M30 1C11 0 0 11 0 27c0 16 12 26 29 26 17 0 29-10 29-26C58 13 50 4 37 1c4 9-1 15-8 17-8 2-12 7-10 13 2 7 11 10 18 5-2 0-4-1-5-2 6 0 11-4 13-11 4 12-2 23-15 23-10 0-18-6-18-16 0-9 5-15 14-18 6-2 7-6 4-11Z"/></svg>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <!-- Etusivu -->
+    <section class="home" id="home" aria-labelledby="home-title">
+      <h1 class="display hero-title" id="home-title" tabindex="-1"><span>Follow your</span> <span>heart</span></h1>
+      <div class="home-info">
+        <p class="intro">Three little scenarios. One surprise ending.</p>
+        <div class="signup">
+          <button type="button" class="plain text-link" data-action="waitlist">JOIN THE WAITLIST</button>
+          <p class="timing"><svg viewBox="0 0 21 21" aria-hidden="true"><circle cx="10.5" cy="10.5" r="10" fill="currentColor"/><path d="M10.5 4.5v6h5" fill="none" stroke="var(--pink)" stroke-width="1.2"/></svg><span>About 30 seconds just<br>for the fun of it…</span></p>
+        </div>
+      </div>
+      <div class="home-bottom">
+        <div>
+          <p>love, in all its little forms.</p>
+          <button type="button" class="plain text-link start-small" data-action="start">What kind of lover Are YOU? <svg class="arrow" viewBox="0 0 44 18" aria-hidden="true"><path d="M1 9h40m-7-7 7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></button>
+        </div>
+        <button type="button" class="start-large" data-action="start">Take the Test
+          <svg class="arrow" viewBox="0 0 44 18" aria-hidden="true"><path d="M1 9h40m-7-7 7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+        </button>
+      </div>
+    </section>
+    <!-- Testin kysymys -->
+    <section class="quiz" id="quiz" aria-labelledby="question" hidden>
+      <p class="eyebrow">Go with your first feeling</p>
+      <h1 class="display question" id="question" tabindex="-1"></h1>
+      <div class="cards" id="cards"></div>
+      <p class="hint"><span>Pick one. No overthinking needed</span><span class="hint-divider" aria-hidden="true"></span><span id="hint"></span></p>
+    </section>
+    <!-- Tuloksen odotusnäkymä -->
+    <section class="reveal" id="reveal" aria-labelledby="reveal-title" hidden>
+      <h1 class="display" id="reveal-title" tabindex="-1">You’re the …</h1>
+    </section>
+    <!-- Testin tulos -->
+    <section class="result" id="result" aria-labelledby="result-title" hidden>
+      <h1 class="display" id="result-title" tabindex="-1"></h1>
+      <p class="result-tag" id="result-tag"></p>
+      <p class="result-copy" id="result-copy"></p>
+      <div class="result-actions">
+        <p>Join for benefits for<br>your love life</p>
+        <button type="button" class="outline" data-action="waitlist">count me in</button>
+      </div>
+    </section>
+    <!-- Odotuslistan lomake -->
+    <section class="waitlist" id="waitlist" aria-labelledby="waitlist-title" hidden>
+      <h1 class="sr-only" id="waitlist-title" tabindex="-1">Join the waitlist</h1>
+      <form id="waitlist-form">
+        <label class="sr-only" for="email">Your email address</label>
+        <input class="display email" id="email" name="email" type="email" autocomplete="email" placeholder="your email address" required aria-describedby="wait-copy wait-status">
+        <p class="wait-copy" id="wait-copy"><span class="wait-line">We’re creating a new app to help</span> <span class="wait-line">you connect, share, and bring more</span> <span class="wait-line">love into everyday life</span></p>
+        <button class="outline wait-submit" type="submit">send love</button>
+        <p class="status" id="wait-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer id="footer" hidden>
+    <span id="footer-text">What kind of lover Are YOU?</span>
+    <span class="footer-rule" aria-hidden="true"></span>
+    <span class="footer-tag">love, in all its little forms.</span>
+  </footer>
+</div>
+</body>
+</html>
